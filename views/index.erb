@@ -1,27 +1,15 @@
 <!Doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
-  <form id="login_form" action="/login" method="post" role="form">
-    <input type="text" name="email" placeholder="Email/Username">
-    <input type="password" name="password" placeholder="Password">
-    <input id= "login_form_submit" type="submit" value="Login">
+  <form>
+    <input type="text">
+    <input type="password">
+    <input type="submit" value="Login">
+    <button>Signup</button>
   </form>
-  <button id="signup_btn">Signup?</button>
-  <form id="sign_up_form" action="/signup" method="post" role="form">
-    <input type="text" name="email" placeholder="Email">
-    <input type="text" name="username" placeholder="Username">
-    <input type="password" name="password" placeholder="Password">
-    <input type="password" name="password_confirm" placeholder="Password Confirm">
-    <input id= "login_form_submit" type="submit" value="Signup">
-  </form>
-  <%= flash[:notice] %>
 </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>
