@@ -1,5 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  "hello world"
+  erb :index
+end
+
+get "/repo" do
+  erb :repo
 end
